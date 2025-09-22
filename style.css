@@ -69,3 +69,37 @@ html {
   transform: translateY(-5px);
   transition: 0.3s;
 }
+/* Hero Section with optional background image */
+#home {
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #56ab2f), url("images/hero.jpg") no-repeat center center/cover;
+  color: white;
+  overflow: hidden;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover animations */
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* About image */
+#about img {
+  max-height: 350px;
+  object-fit: cover;
+}
+#home {
+  background: url("images/hero.jpg") no-repeat center center/cover,
+    linear-gradient(to right, #a8e06390, #56ab2f90);
+}
+
