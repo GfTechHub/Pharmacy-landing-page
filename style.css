@@ -43,3 +43,29 @@ section {
 html {
   scroll-behavior: smooth;
 }
+/* Custom Styles */
+
+/* Hero Section with gradient */
+#home {
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  color: white;
+  overflow: hidden;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover animations */
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+/* Cards subtle hover */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
