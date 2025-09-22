@@ -6,15 +6,13 @@
   <title>PharmaCare - Your Trusted Pharmacy</title>
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">PharmaCare</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -32,43 +30,40 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero d-flex align-items-center text-center">
+  <section id="home" class="d-flex align-items-center justify-content-center text-center">
     <div class="container">
-      <h1 class="display-4 fw-bold text-white">Welcome to PharmaCare</h1>
-      <p class="lead text-light">Your trusted partner in health, medicine, and wellness.</p>
-      <a href="#services" class="btn btn-light btn-lg mt-3">Explore Services</a>
+      <h1 class="display-4 fw-bold text-success">Welcome to PharmaCare</h1>
+      <p class="lead text-dark">Your trusted partner in health, medicine, and wellness.</p>
+      <a href="#services" class="btn btn-success btn-lg mt-3">Explore Services</a>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4 text-success">Our Services</h2>
+  <section id="services" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold text-success mb-4">Our Services</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
-              <i class="bi bi-capsule-pill fs-1 text-success"></i>
-              <h5 class="mt-3">Online Prescription</h5>
-              <p>Order and refill your prescriptions online with ease and convenience.</p>
+              <h5 class="card-title text-success">Online Prescriptions</h5>
+              <p class="card-text">Easily upload and manage your prescriptions online for quick access to medicines.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
-              <i class="bi bi-heart-pulse fs-1 text-success"></i>
-              <h5 class="mt-3">Health Consultation</h5>
-              <p>Talk to our expert pharmacists for professional advice and guidance.</p>
+              <h5 class="card-title text-success">Health Consultation</h5>
+              <p class="card-text">Talk to licensed pharmacists and doctors for health advice and drug usage guidance.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
-              <i class="bi bi-truck fs-1 text-success"></i>
-              <h5 class="mt-3">Home Delivery</h5>
-              <p>Fast and reliable delivery of medicines to your doorstep.</p>
+              <h5 class="card-title text-success">Home Delivery</h5>
+              <p class="card-text">Order medicines from home and get them delivered safely to your doorstep.</p>
             </div>
           </div>
         </div>
@@ -79,17 +74,35 @@
   <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container text-center">
-      <h2 class="fw-bold mb-4 text-success">About Us</h2>
-      <p class="lead">At <span class="fw-bold">PharmaCare</span>, we are committed to improving healthcare access by providing trusted medicines, professional consultation, and reliable delivery services. Our goal is to make healthcare simple, accessible, and affordable for everyone.</p>
+      <h2 class="fw-bold text-success mb-4">About Us</h2>
+      <p class="lead">At <strong>PharmaCare</strong>, we are committed to delivering high-quality medicines, exceptional customer service, and trusted healthcare support.  
+      Our mission is to make healthcare affordable and accessible for everyone.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4 text-success">Contact Us</h2>
-      <p class="mb-3">We’d love to hear from you. Reach out for inquiries, prescriptions, or consultations.</p>
-      <a href="mailto:info@pharmacare.com" class="btn btn-success btn-lg"><i class="bi bi-envelope-fill me-2"></i>Email Us</a>
+    <div class="container">
+      <h2 class="fw-bold text-success text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 

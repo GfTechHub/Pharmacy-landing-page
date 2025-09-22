@@ -30,3 +30,16 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* Custom Styles */
+
+/* Hero Section with gradient */
+#home {
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  color: white;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
