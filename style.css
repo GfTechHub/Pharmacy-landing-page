@@ -1,2 +1,26 @@
-/* Custom Styles for Pharmacy Landing Page */
-/* Step 1: Empty file – ready for future styling */
+/* Pharmacy Landing Page Styles */
+
+/* Body & Smooth Scroll */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section with Gradient */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #28a745, #81c784);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Service Cards Hover Effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
